@@ -20,12 +20,14 @@
         <div class = propic>
             <img src="pic3.png" alt="Italian Trulli" width="50px" height="50px" class= pro>
             <span class = description>
-                User Name
+               
             </span>
         </div> 
-        <a href="#">For You</a>
-        <a href="#">Profile</a>
-        <a href="#">Create New Post</a>
+        <div id = "links">
+        <!-- <a href="proj_homepage.html">For You</a>
+        <a href="proj_personalpage.html">Profile</a>
+        <a href="#">Create New Post</a> -->
+        </div>
 
         <div class = setting>
             Settings
@@ -123,6 +125,8 @@
 </body>
 
 <script>
+    window.onload = document.getElementById("links").innerHTML= '<a href="proj_homepage.html">For You</a><br/><a href="proj_personalpage.html">Profile</a><br/><a href="#">Create New Post</a> ';
+   
     document.getElementById("song_name");
     document.getElementById("song_link");
     document.getElementById("song_vibe");

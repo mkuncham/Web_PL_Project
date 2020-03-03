@@ -22,9 +22,11 @@
             <img src="pic3.png" alt="Italian Trulli" width="50px" height="50px" class= pro>
            
         </div> 
-        <a href="#">For You</a>
+        <div id = "links">
+        <!-- <a href="proj_homepage.html">For You</a>
         <a href="#">Profile</a>
-        <a href="#">Create New Post</a>
+        <a href="proj_post.html">Create New Post</a> -->
+      </div>
 
         <div class = setting>
             Settings
@@ -57,12 +59,9 @@
         <div class = "trend">
             Trending now...
 
-            <div class = Plastic>
-                <img src="plastic.jpeg" alt="Italian Trulli" width="200px" height="200px">
-            </div>
-            <div class = Grande>
-                <img src="ariana.jpeg" alt="Italian Trulli" width="200px" height="200px">
-            </div>
+            <div class = sptop50>
+              <iframe id= "ply" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbLRQDuF5jeBp" width="270" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+           </div>
             
         </div>
 
@@ -105,6 +104,7 @@
       <!-- add java script here -->
       
       <script>
+        window.onload = document.getElementById("links").innerHTML= '<a href="proj_homepage.html">For You</a><br/><a href="#">Profile</a><br/><a href="proj_post.html">Create New Post</a>';
      
       function openCity(event, pick) {
           
@@ -133,6 +133,9 @@
         event.currentTarget.className += " active";
       }
     document.getElementbyId("defaultOpen").click();
+
+
+   
       
     </script>
       

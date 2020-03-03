@@ -82,16 +82,18 @@
             
         </div> 
 
-            
-            <a href = "#" >  For You </a>
+            <div id = "links">
+            <!-- <a href = "#" >  For You </a>
             <a href = "proj_personalpage.html"> Your Posts </a>
-            <a href = "proj_post.html"> Create a Poast</a>
+            <a href = "proj_post.html"> Create a Poast</a> -->
+
+        </div>
    
         <div class = setting>
             Settings
         </div>
         <div class = privacy>
-            Privacy woah
+            Privacy 
         </div>
             
       </div>
@@ -165,7 +167,9 @@
      
 // } -->
 <script>
-    window.onload = function(){ alert("Hello! Weclcome to our page!");}
+    // window.onload = function(){ alert("Hello! Weclcome to our page!");}
+    window.onload = document.getElementById("links").innerHTML='<a href = "#" >  For You </a> <br/> <a href = "proj_personalpage.html"> Your Posts </a> <br/><a href = "proj_post.html"> Create a Poast</a>';
+
 </script>
  
 
