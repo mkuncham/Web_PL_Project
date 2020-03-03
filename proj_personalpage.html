@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+
+<head>
+    <div class = title>
+    <link rel="stylesheet" type="text/css" href="proj_personalpage.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    
+    <h1 >
+    For You
+    </h1>
+</div>
+   
+</head>
+
+<body class = body>
+
+   
+    <div class="sidenav">
+        <div class = propic>
+            <img src="pic3.png" alt="Italian Trulli" width="50px" height="50px" class= pro>
+           
+        </div> 
+        <a href="#">For You</a>
+        <a href="#">Profile</a>
+        <a href="#">Create New Post</a>
+
+        <div class = setting>
+            Settings
+        </div>
+        <div class = privacy>
+            Privacy
+        </div>
+            
+      </div>
+
+
+
+      <div class="sidenav2">
+          <div class = Right-nav-content>
+            What are you Feeling?
+          </div>
+        
+          <div>
+            <select class="genres">
+            <option value="" disabled selected hidden>Choose a Genre</option>
+            <option value="Today's Hits">Today's Hits</option>
+            <option value="Chill">Chill</option>
+            <option value="Sad Boy Hours">Sad Boy Hours</option>
+            <option value="Rager">Rager</option>
+            <option value="Indie">Indie</option>
+
+            </select>
+        </div>
+
+        <div class = "trend">
+            Trending now...
+
+            <div class = Plastic>
+                <img src="plastic.jpeg" alt="Italian Trulli" width="200px" height="200px">
+            </div>
+            <div class = Grande>
+                <img src="ariana.jpeg" alt="Italian Trulli" width="200px" height="200px">
+            </div>
+            
+        </div>
+
+
+        
+
+    </div>
+
+     <!-- Center Section of the Body  -->
+     
+
+     <div class="tab" >
+        <button class="tablinks" onclick="openCity(event, 'Your Posts')" id ="defaultOpen">Your Posts</button>
+        <button class="tablinks" onclick="openCity(event, 'Your Likes')">Your Likes</button>
+         
+    </div>
+      
+      <!-- Tab content -->
+      <div id="Your Posts" class="tabcontent" >
+        <br/>
+        <br/>
+        <br/>
+        post
+        <!-- <h3>Post</h3> -->
+        <!-- <p>Test 1.</p> -->
+      </div>
+      
+      <div id="Your Likes" class="tabcontent">
+        <br/>
+        <br/>
+        <br/>
+        like
+        <!-- <h3>Post</h3> -->
+        <!-- <p>Test 1.</p> -->
+        
+      </div>
+
+   
+
+      <!-- add java script here -->
+      
+      <script>
+     
+      function openCity(event, pick) {
+          
+        
+        // Declare all variables
+        var i, tabcontent, tablinks;
+      
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+         for (i = 0; i < tabcontent.length; i++) {
+           tabcontent[i].style.display = "none";
+         }
+        
+         
+      
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        
+        
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(pick).style.display = "block";
+        event.currentTarget.className += " active";
+      }
+    document.getElementbyId("defaultOpen").click();
+      
+    </script>
+      
+     
+      
+</body>
+
+</html>
